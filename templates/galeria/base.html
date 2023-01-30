@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="{% static '/styles/style.css' %}">
 </head>
 
-<header> {% include 'galeria/partials/_lateral.html' %} </header>
-
 <body>
+    {% include 'galeria/partials/_menu.html' %}
     {% block content %} {% endblock %}
     {% include 'galeria/partials/_footer.html' %}
-</body>    
+</body>
+
+</html>
